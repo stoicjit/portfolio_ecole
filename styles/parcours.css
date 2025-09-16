@@ -1,0 +1,159 @@
+body {      /*Enleve l'espace sur les cotes */
+  margin: 0;
+}
+main{
+    padding: 0px 60px;
+    margin-bottom: 100px;
+}
+
+  /* En tete et barre de naviguation*/
+.header-wrapper {     /* Permet au header de rester fix au milieu */
+  position: sticky;  /*Reste au haut de la page*/
+  top: 0;
+  z-index: 1000;
+  padding: 8px;
+ 
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(2, 2, 2, 0.329);    /* Cree une ombre autour du header */
+
+}
+
+header h1 {     /*titre du header*/
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+header nav ul {
+  list-style: none;   /* enlève les points */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  /* espace entre items */
+}
+
+header nav ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: #Ff914D;
+  text-decoration: underline;  /*effet survol*/
+}
+
+.logo {
+  width: 60px;
+  margin-right: 20px;
+  border-radius: 100%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 60px;
+    color: #ff9900;
+}
+
+h3 {
+    color: #ff4d4d;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    color: #07006e;
+    font-size: 1.2em;
+}
+
+.cv{
+    text-align: left;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 40px;
+    max-width: fit-content;
+}
+
+
+.experience{
+    padding: 60px;
+    display: flex;
+    gap: 200px;     /*espace entre le cv et l'image*/
+    text-align: center;
+    
+}
+
+.experience img{
+    margin-top: 30px;
+    text-align: right;
+    max-width: 350px; /* Ensures the image scales down to fit its container */
+  height:fit-content;  
+  border: 2px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 1);
+}
+
+
+.projets{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100vw;
+    margin: 60px auto;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 40px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    max-width: fit-content;
+}
+
+.card:hover { /*Effet survol*/
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+.card ul {
+     list-style:upper-roman;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.card li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    margin-top: 50px;
+}

@@ -1,0 +1,144 @@
+body {      /*Enleve l'espace sur les cotes */
+  margin: 0;
+}
+
+  /* En tete et barre de naviguation*/
+.header-wrapper {     /* Permet au header de rester fix au milieu */
+  background-color: black;
+  position: sticky;  /*Reste au haut de la page*/
+  top: 0;
+  z-index: 1000;
+  padding: 8px;
+ 
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(2, 2, 2, 0.329);    /* Cree une ombre autour du header */
+
+}
+
+header h1 {     /*titre du header*/
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+header nav ul {
+  list-style: none;   /* enlève les points */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  /* espace entre items */
+}
+
+header nav ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: #Ff914D;
+  text-decoration: underline;  /*effet survol*/
+}
+
+.logo {
+  width: 60px;
+  margin-right: 20px;
+  border-radius: 100%;
+}
+
+
+/* Section image de fond */
+.acceuil {
+  height: 100vh;  /* Prend la taille complete de l'écran */
+  width: 100%;
+  background: url("../assets/acceuil.jpg") top center / cover no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 60px;
+  padding-block-start: 50px;
+  box-sizing: border-box;
+}
+
+/* Carte flottante */
+.sur-moi {
+  background: rgba(255, 255, 255, 0.70);
+  border-radius: 14px;
+  padding: 30px;
+  max-width: 300px;
+  line-height: 1.5;
+  color: #222;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60%;
+}
+
+.sur-moi h2 {  /* Titre de la carte*/
+  margin-top: 0;
+  font-size: 28px;
+  color: #333;
+}
+
+.sur-moi p::first-line {
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.sur-moi p {
+  flex-grow: 1;   /* Prend l'espace restant*/
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+/* Boutons au bas de la carte*/
+.cardbuttons {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.cardbuttons button {
+  padding: 10px 20px;
+  border: 5px;
+  border-radius: 8px;
+  background-color: #ff9d2e;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.cardbuttons button:hover {    /* Effet survol */
+  box-shadow: 0 4px 10px rgba(2, 2, 2, 0.329);
+  transform: translateY(-2px);
+
+
+}
+
+.cardbuttons button:active {      /* Effet click */
+  box-shadow: 0 0px 0px rgba(2, 2, 2, 0.329);
+  transform: translateY(2px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-pP4xVY+..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>S.K. Contact</title>
+</head>
+
+<body>
+  <div class="header-wrapper">
+    <header>
+      <a href="index.html"><img class="logo" src="assets/Logo.png" alt="Logo"></a>
+      <h1>Klair, Simranjit</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="parcours.html">Parcours</a></li>
+          <li><a href="blogs.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <main class="contact">
+    <h2>Contact</h2>
+    <div class="contact-list">
+      <form action="https://formspree.io/f/xvgbdkkg" method="POST" class="contact-form">
+        <h3>Envoyez-moi un message</h3>
+        <label for="name">Nom*:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email*:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Téléphone:</label>
+        <input type="tel" id="téléphone" name="téléphone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+        <label for="message">Message*:</label>
+        <textarea id="message" name="message" rows="3" required></textarea>
+
+        <button type="submit" class="submit-btn">Envoyer</button>
+        <button type="reset" class="reset-btn">Effacer</button>
+      </form>
+      <section class="reseaux-sociaux">
+        <h3>Réseaux sociaux</h3>
+        <nav>
+
+        <ul>
+          <li><a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/simranjit-klair-652a782aa/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="mailto:sklair2002@gmail.com" target="_blank" class="email"><i class="fas fa-envelope"></i></a></li>
+          <li><a href="https://github.com/stoicjit?tab=overview&from=2025-09-01&to=2025-09-06" target="_blank" class="github"><i class="fab fa-github"></i></a></li>
+          
+        </ul>
+      </nav>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
+  </footer>
+</body>
+

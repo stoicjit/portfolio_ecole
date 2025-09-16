@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.K. Blogs</title>
+    <link rel="stylesheet" href="styles/blogs.css">
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <header>
+            <a href="index.html"><img class="logo" src="assets/Logo.png" alt="Logo"></a>
+            <h1>Klair, Simranjit</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="parcours.html">Parcours</a></li>
+                    <li><a href="blogs.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <h2 class="page-title">Bienvenue sur mon Blog</h2>
+    <main class="blog-list">
+        <section class="blog-card">
+            <h3>Les Agents d'Intelligence Artificielle</h3>
+            <img src="assets/ai_agent.jpg" alt="Large Language Models" class="blog-image">
+            <p>Découvrez comment les agents IA interagissent avec notre quotidien et automatisent les tâches complexes.
+            </p>
+            <a href="ai-agent-blog.html" class="btn">Lire l'article</a>
+        </section>
+
+        <section class="blog-card">
+            <h3>Les Large Language Models (LLMs)</h3>
+            <img src="assets/LLM.jpg" alt="Large Language Models" class="blog-image">
+            <p>Comprenez les modèles linguistiques avancés, leurs applications, leurs limites et leur avenir.</p>
+            <a href="LLM-BLog.html" class="btn">Lire l'article</a>
+        </section>
+    </main>
+    <div class="question">
+    <h3>Sujet dont vous aimeriez lire</h3>
+    <form id="formulaire">
+        <label for="sujet"></label>
+        <input type="text" id="sujet" required>
+
+        <button type="button" onclick="merci()" class="btn">Suggerer</button>
+    </form>
+    <p id="resultat"></p>
+    <script src="bonus.js"></script>
+    </div>
+    <footer>
+        <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>
